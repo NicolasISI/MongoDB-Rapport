@@ -16,3 +16,18 @@ Ce type de requête permettra également de comparer deux restaurant afin de sav
 Enfin, cela permettrait également de réaliser des statiques par secteur géographique.
 
 ### Proposer une ou plusieurs applications de requêtes géospatiale et illustrer au moins l’une des propositions avec un exemple (Screenshot attendu)
+
+
+# Projet 
+
+## Travail demandé
+Une chaine de restaurants souhaite récupérer des données clients afin de capitaliser sur un flux de personnes sans cesse grandissant (plusieurs dizaine de milliers de clients par semaine dans toute la France).
+
+Fournissez un projet d'application centré sur un stockage des données avec Mongo DB.
+
+Le projet dans son ensemble ne sera pas forcément terminé cette semaine, en revanche toutes les interactions avec la base de données doivent être documentées et testées. Et toutes les questions posées devront être traitées.
+
+## Notes
+
+Pour gérer la base de données de notre projet, nous avons choisi d'utiliser Atlas pour l'hébergement, puis Compass pour la gérer et créer nos requêtes.
+C'était la solution la plus facile étant donné que nous possédons tout les trois des machines windows et ue nous avons déjà utiliser ces outils pour notre projet de soutenance.
