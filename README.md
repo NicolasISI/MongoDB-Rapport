@@ -94,6 +94,24 @@ Il y a maintenant le restaurant "Roanne Restaurant" qui apparait. Il n'apparaiss
 
 Ces deux requêtes montrent bien que nous pouvons retourner tous les restaurants se trouvant dans une certaine zone géographique
 
+## L'aggrégation
+
+L'aggrégation permet de regrouper les données de plusieurs documents afin de retourner un résultat.
+La pipeline d'aggrégation est une aggrégation faite aavec un enchainement de plusieurs étapes.
+L'aggrégation sera bien utile dans notre projet, elle permettra par exemple de trouver les clients qui sont allés dans un certain restaurant donné. A savoir que l'aggrégation peut également être combinée à une requête GéoSpaciale.
+
+Voici une requête utilisant l'aggrégation :
+![Aggrégation](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/projetAggregateRequestWithResponse.png?raw=true)
+Cette requête nous permet de retourner le nom et prénom ("firstname" "lastname") des clients ayant déjà été dans le restaurant n°1 ("visit.restaurantId").
+
+Nous allons maintenant combiner l'aggrégation avec une requête GéoSpaciale :
+![Aggrégation](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/projectCombineGeoSWithAggregation.png?raw=true)
+Cette requête permet dans un premier temps de récupérer la distance entre l'"opéra", point défini en fonction de ces coordonnées, et les restaurants. L'aggrégation va ensuite filtrer tous les restaurants afin de ne retourner uniquement les restaurants se trouvant dans la ville("city") de Lyon.
+
+Nous allons maintenant exécuter la même requete mais dans la collection "Clients":
+![Aggrégation](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/projetClientsGeoNearResult1.png?raw=true)
+Cette requête retourne donc tous les clients habitant à Lyon("localisation.city"), ainsi que la distance("distance.estimation") de leur domicile par rapport à l'opéra.
+
 # TP Requêtes
 
 ### 1. Ecrivez une requête MongoDB pour afficher tous les documents dans les restaurants de la collection 
