@@ -29,6 +29,17 @@ Nous avons choisi d'utiliser MongoDB car c'est un système de base de données n
 Pour notre projet, la base de données a été créée à l'aide de MongoDB Atlas. Le logiciel Compass est utilisé pour administrer et visualiser la base de données.
 La connection à nos bases de données à été sécurisé avec une whitelist d'IP via Atlas. De plus, nous avons mis en place un compte utilisateur par personne afin de pouvoir limiter toute fraude.
 
+> Pourquoi MongoDB et pas MySQL ?
+
+Contrairement à MySQL, MongoDB n'est pas un système relationnel. Cela signifie que les données n'ont pas la contrainte d'être unique.Une certaine donnée peut donc être stockée à plusieurs reprises.
+
+Une base de données MySQL contient des clées primaires et des clées secondaires qui permettent de créer des liens entre les différentes tables de la base de données. Cela permet donc l'unicité des données (https://sql.sh/cours/create-table/primary-key). Dans le cadre d'une base de données MongoDB, les documents possèdent bien une clé unique ("_id" : ObjectId("xxxx")) mais elle sert uniquement a identifier de manière unique la donnée en question, et pas à établir des relations. (https://askcodez.com/lid-de-la-collection-de-longueur-dans-mongodb.html)
+
+MongoDB est un SGBD (Système de Gestion de Base de Données) orienté document, ce qui n'est pas le cas de MySQL
+Un avantage certain de MongoDB face à MySQL est que les données sont stockées sous forme de documents au format JSON dans des collections, alors que pour MySQL, les données sont stockées sous forme de lignes dans des tableaux. Dans un tableau de données MySQL, toutes les lignes de données ont la même composition, donc le même nombre de colonnes, alors que dans une collection MongoDB, chaque document peut avoir une composition différente.  
+
+
+
 ## Création de la base de données
 
 Pour commencer, nous avons créé la base de données "Restaurants" puis nous nous y sommes connecté avec la commande 
