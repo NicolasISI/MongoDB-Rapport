@@ -55,6 +55,12 @@ Afin de réduire toujours plus le temps de retours des données suite à une req
 L'indexation correspond à réaliser un tableu d'éléments triés selon un champs du document. Par exemple, si nous voulons indexer la collection "Clients" sur le champs "Firstname", cela permettra en cas de recherche d'un client en fonction de son nom de famille de trouver directement dans quels documents de la collection le nom de famille recherché est présent, sans avoir à parcourir touts les documents les uns après les autres. Cela mène à un gain de performance considérable sur nos requêtes.
 ![indexation](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/index.png?raw=true)
 
+## Le stockage de documents dans MongoDB
+
+Dans le cadre de notre projet, le stockage de document sera utilisé pour les photos de profil des clients par exemple. 
+Il y a plusieurs méthode possibles pour stocker des documents dans mongoDB:
+- Le format BSON, permet de stocker les fichiers par morceau de 4Mo maximum. Un fichiuer de 5Mo sera donc stocké dans 2 documents de 4Mo chacun
+- Pour les fichiers de grandes tailles, nous pourrons également les stockées sur un serveur de fichier et stocker uniquement leur chemin d'accès en base de données.
 
 ## Création de la base de données
 
