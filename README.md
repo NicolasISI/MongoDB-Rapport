@@ -79,17 +79,17 @@ Les requêtes GéoSpaciales sont très utiles pour faire des analyses en fonctio
 Une requêtes GéoSpaciale permet de trouver des éléments de la base de données inclus dans un polygones, mais aussi de trouver des éléments de la BDD proches d'un point géographique donné.
 
 Avant toutes choses, il faut créer un index de type "2dsphere" sur le champs localisation de la collection "Restaurants". Cet index va nous permettre de récupérer les documents compris dans une zone circulaire définie (grâce aux coordonnées des restaurants)
-![CreateIndex](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/projetCreateIndex2dsphere.PNG?raw=true)
+![CreateIndex](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/projetCreateIndex2dsphere.png?raw=true)
 
 Nous pouvons vérifier que l'index est bien créé dans Atlas
-![CreateIndex](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/projetCreateIndex2dsphere2.PNG?raw=true)
+![CreateIndex](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/projetCreateIndex2dsphere2.png?raw=true)
 
 Nous pouvons donc maintenant effectuer une requête GéoSpaciale. Par exemple, nous voulons récupérer les restaurants se trouvant à moins de 10 km d'un lieu nommé "opéra".
-![RequeteGéoSpaciale](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/projetNearSphereResult1.PNG?raw=true)
+![RequeteGéoSpaciale](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/projetNearSphereResult1.png?raw=true)
 Nous ponvonc don voir qu'il y a un seul restaurant se trouvant à une distance de 10km maximum de l'"opéra"
 
 Maintenant, si nous augmentons la distance maximale à 100 km:
-![RequeteGéoSpaciale](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/projetNearSphereResult2.PNG?raw=true)
+![RequeteGéoSpaciale](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/projetNearSphereResult2.png?raw=true)
 Il y a maintenant le restaurant "Roanne Restaurant" qui apparait. Il n'apparaissait pas avant car il est à une distance supérieure à 10km de l'"opéra".
 
 Ces deux requêtes montrent bien que nous pouvons retourner tous les restaurants se trouvant dans une certaine zone géographique
