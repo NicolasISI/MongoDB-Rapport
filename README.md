@@ -112,6 +112,15 @@ Nous allons maintenant exécuter la même requete mais dans la collection "Clien
 ![Aggrégation](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/projetClientsGeoNearResult1.png?raw=true)
 Cette requête retourne donc tous les clients habitant à Lyon("localisation.city"), ainsi que la distance("distance.estimation") de leur domicile par rapport à l'opéra.
 
+## La méthode explain
+
+La méthode explain sert à retourner à la fin du résultat de requête des informations sur l'éxécution de certaines commande (aggregate(), count(), distinct(), find(), findAndModify(), delete(), mapReduce() et update()).
+Parmis ces informations, elle retourne par exemple le temps d'éxécution d'une requête. Ce retour peut être très utile dans le cadre de l'optimisation de requêtes.
+
+Voici une requête utilisant la méthode explain :
+![Explain](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/projetMethodExplain3.png?raw=true)
+On peut voir que énormément d'information sont retournés.
+
 # TP Requêtes
 
 ### 1. Ecrivez une requête MongoDB pour afficher tous les documents dans les restaurants de la collection 
