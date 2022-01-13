@@ -48,7 +48,105 @@ La commande insertMany nous retourne le résultat suivant :
 ![ReturnInsertMany](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/projetCreateCollectionClientResponse.PNG?raw=true)
 Nous voyons donc que 6 clients ont bien été entrés dans la collection Clients. Nous pouvons par ailleurs avoir leur _id.
 
+# TP Requêtes
 
+### 1. Ecrivez une requête MongoDB pour afficher tous les documents dans les restaurants de la collection 
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP1.png?raw=true)
+
+### 2. Ecrivez une requête MongoDB pour afficher les champs restaurant_id, name, borough et cuisine pour tous les documents de la collection restaurant.
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP2.png?raw=true)
+
+### 3. Ecrivez une requête MongoDB pour afficher les champs restaurant_id, name, borough et cuisine, mais exclure le champ _id pour tous les documents de la collection restaurant. 
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP3.png?raw=true)
+
+### 4. Ecrivez une requête MongoDB pour afficher les champs restaurant_id, nom, arrondissement et code postal, mais excluez le champ _id pour tous les documents de la collection restaurant.
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP4.png?raw=true)
+
+### 5. Ecrivez une requête MongoDB pour afficher tous les restaurants qui sont dans l'arrondissement du Bronx. 
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP5.png?raw=true)
+
+### 6. Ecrivez une requête MongoDB pour afficher les 5 premiers restaurants qui se trouvent dans le quartier du Bronx. 
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP6.png?raw=true)
+
+### 7. Ecrivez une requête MongoDB pour afficher les 5 restaurants suivants après avoir sauté les 5 premiers qui sont dans le quartier du Bronx.
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP7.png?raw=true)
+
+### 8. Ecrivez une requête MongoDB pour trouver les restaurants qui ont obtenu un score supérieur à 90. 
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP8.png?raw=true)
+
+### 9. Ecrivez une requête MongoDB pour trouver les restaurants qui ont obtenu un score supérieur à 80 mais inférieur à 100. 
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP9.png?raw=true)
+
+### 10. Ecrivez une requête MongoDB pour trouver les restaurants qui se situent dans une latitude inférieure à -95,754168.
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP10.png?raw=true)
+
+### 11. Ecrivez une requête MongoDB pour trouver les restaurants qui ne préparent pas de cuisine américaine et dont la note est supérieure à 70 et la latitude inférieure à -65.754168
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP11.png?raw=true)
+
+### 12. Ecrivez une requête MongoDB pour trouver les restaurants qui ne préparent pas de cuisine américaine, qui ont obtenu une note supérieure à 70 et qui sont situés à une longitude inférieure à -65.754168.
+Note : Faites cette requête sans utiliser l'opérateur $and. 
+
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP12.png?raw=true)
+
+### 13. Ecrivez une requête MongoDB pour trouver les restaurants qui ne préparent pas de cuisine 'américaine' et ont obtenu une note 'A' et qui n'appartiennent pas à l'arrondissement de Brooklyn. Le document doit être affiché en fonction de la cuisine par ordre décroissant. 
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP13.png?raw=true)
+
+### 14. Écrivez une requête MongoDB pour trouver l'identifiant du restaurant, le nom, l'arrondissement et la cuisine pour les restaurants qui contiennent 'Wil' dans les trois premières lettres de leur nom. 
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP14.png?raw=true)
+
+### 15. Écrivez une requête MongoDB pour trouver l'identifiant, le nom, l'arrondissement et la cuisine des restaurants dont le nom contient trois lettres 'ces'. 
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP15.png?raw=true)
+
+### 16. Ecrivez une requête MongoDB pour trouver l'Id, le nom, l'arrondissement et la cuisine des restaurants qui contiennent "Reg" comme trois lettres dans leur nom.
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP16.png?raw=true)
+
+### 17. Ecrivez une requête MongoDB pour trouver les restaurants qui appartiennent à l'arrondissement du Bronx et qui préparent des plats américains ou chinois.
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP17.png?raw=true)
+
+### 18. Ecrivez une requête MongoDB pour trouver l'Id, le nom, l'arrondissement et la cuisine des restaurants qui appartiennent à l'arrondissement de Staten Island ou Queens ou Bronx ou Brooklyn.
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP18.png?raw=true)
+
+### 19. Ecrivez une requête MongoDB pour trouver l'Id, le nom, l'arrondissement et la cuisine des restaurants qui n'appartiennent pas à l'arrondissement de Staten Island ou Queens ou Bronx ou Brooklyn.
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP19.png?raw=true)
+
+### 20. Ecrivez une requête MongoDB pour trouver l'Id, le nom, l'arrondissement et la cuisine des restaurants qui ont obtenu un score inférieur à 10.
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP20.png?raw=true)
+
+### 21. Ecrivez une requête MongoDB pour trouver l'identifiant, le nom, l'arrondissement et la cuisine des restaurants qui ont préparé des plats autres que "américains" et "chinois" ou dont le nom commence par la lettre "Wil". 
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP21.png?raw=true)
+
+### 22. Ecrivez une requête MongoDB pour trouver l'Id du restaurant, le nom et les notes pour les restaurants qui ont obtenu la note "A" et un score de 11 sur la date : ISODate "2014-08-11T00:00:00Z" parmi de nombreuses dates d'enquête... 
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP22.png?raw=true)
+
+### 23. Ecrivez une requête MongoDB pour trouver l'Id du restaurant, le nom et les notes pour les restaurants dont le 2ème élément du tableau des notes contient la note "A" et le score 9 à la date ISOD "2014-08-11T00:00:00Z". 
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP23.png?raw=true)
+
+### 24. Ecrivez une requête MongoDB pour trouver l'identifiant du restaurant, le nom, l'adresse et l'emplacement géographique des restaurants pour lesquels le deuxième élément du tableau coord contient une valeur supérieure à 42 et inférieure à 52... 
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP24.png?raw=true)
+
+### 25. Ecrivez une requête MongoDB pour classer le nom des restaurants dans l'ordre croissant avec toutes les colonnes.
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP25.png?raw=true)
+
+### 26. Ecrivez une requête MongoDB pour classer le nom des restaurants en ordre décroissant avec toutes les colonnes. 
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP26.png?raw=true)
+
+### 27. Ecrivez une requête MongoDB pour classer le nom de la cuisine par ordre croissant et pour cette même cuisine, l'arrondissement doit être classé par ordre décroissant. 
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP27.png?raw=true)
+
+### 28. Ecrivez une requête MongoDB pour savoir si toutes les adresses contiennent la rue ou pas.
+Je n'ai pas réussi à créer cette requête
+
+### 29. Ecrivez une requête MongoDB qui sélectionnera tous les documents de la collection restaurants où la valeur du champ coord est Double. 
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP29.png?raw=true)
+
+### 30. Ecrivez une requête MongoDB qui sélectionnera l'Id, le nom et les notes des restaurants qui renvoient 0 comme reste après avoir divisé le score par 7. 
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP30.png?raw=true)
+
+### 31. Écrivez une requête MongoDB pour trouver le nom du restaurant, l'arrondissement, la longitude, l'attitude et la cuisine pour les restaurants dont le nom contient trois lettres 'mon'. 
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP31.png?raw=true)
+
+### 32. Écrivez une requête MongoDB pour trouver le nom du restaurant, le quartier, la longitude, la latitude et la cuisine des restaurants dont le nom contient trois lettres "Mad". 
+![TP1](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/TP32.png?raw=true)
 
 ## Requêtes GéoSpatiales :
 
