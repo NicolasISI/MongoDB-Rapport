@@ -38,6 +38,20 @@ Une base de données MySQL contient des clées primaires et des clées secondair
 MongoDB est un SGBD (Système de Gestion de Base de Données) orienté document, ce qui n'est pas le cas de MySQL
 Un avantage certain de MongoDB face à MySQL est que les données sont stockées sous forme de documents au format JSON dans des collections, alors que pour MySQL, les données sont stockées sous forme de lignes dans des tableaux. Dans un tableau de données MySQL, toutes les lignes de données ont la même composition, donc le même nombre de colonnes, alors que dans une collection MongoDB, chaque document peut avoir une composition différente.  
 
+## Le BigData
+
+Il y a énormément de domaines qui se spécialise dans la gestion de grosse quantité de données. Les principaux sont la politique, la recherche scientifique, la communication et le marketing.
+MongoDB est parfaitement adapté à la gestion de grandes quantités de données
+
+> Elasticsearch, autre alternative NoSQL
+
+## Les fonctionnalités avancée de MongoDB
+
+Les fonctionnalités avancées de MongoDB sont un énorme avantage car elle permettent de réaliser des analyses poussées. Grâce à ses analyses en condition réelles, un ciblage et des changements dans les restaurants pourront être effectués afin de développer les restaurants. Ces analyses pourront également servir à faire des statistiques.
+
+Afin de réduire toujours plus le temps de retours des données suite à une requête, nous pouvons utiliser l'indexation des données.
+L'indexation correspond à réaliser un tableu d'éléments triés selon un champs du document. Par exemple, si nous voulons indexer la collection "Clients" sur le champs "Firstname", cela permettra en cas de recherche d'un client en fonction de son nom de famille de trouver directement dans quels documents de la collection le nom de famille recherché est présent, sans avoir à parcourir touts les documents les uns après les autres. Cela mène à un gain de performance considérable sur nos requêtes.
+![indexation](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/index.png?raw=true)
 
 
 ## Création de la base de données
