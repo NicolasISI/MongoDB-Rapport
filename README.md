@@ -43,7 +43,9 @@ Un avantage certain de MongoDB face à MySQL est que les données sont stockées
 Il y a énormément de domaines qui se spécialise dans la gestion de grosse quantité de données. Les principaux sont la politique, la recherche scientifique, la communication et le marketing.
 MongoDB est parfaitement adapté à la gestion de grandes quantités de données
 
-> Elasticsearch, autre alternative NoSQL
+> Hadoop, autre alternative NoSQL
+
+Hadoop est une solution opensource appartenant à Apache. Hadoop offre un espace de stockage de données massif, et ce pour tous types de données. Hadoop est réputé pour son immense puissance de traitement de données et pour la prise en charge d'une quantité de tâches virtuellement illimitée. Hadoop était la principale plateforme de BigData en 2018 (selon https://www.lebigdata.fr/hadoop).
 
 ## Les fonctionnalités avancée de MongoDB
 
