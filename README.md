@@ -36,12 +36,17 @@ Pour commencer, nous avons créé la base de données "Restaurants" puis nous no
 
 Nous avons ensuite créée une collection "restaurants", puis une collection "clients"
 > db.createCollection("Restaurants", { collection: {locale:"fr"}})
+
 > db.createCollection("Clients", { collection: {locale:"fr"}})
-![CreateCollection](https://github.com/NicolasISI/MongoDB-Rapport/blob/main/image/TP1.png?raw=true)
+
+![CreateCollection](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/projetCreateCollectionRestaurant.PNG?raw=true)
 
 Il a ensuite fallu intégrer des données dans ces collections, par exemple, nous avons intégrer des clients :
+![CreateCollection](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/projetCreateCollectionClient.PNG?raw=true)
 
-
+La commande insertMany nous retourne le résultat suivant :
+![ReturnInsertMany](https://github.com/NicolasISI/MongoDB-Rapport/blob/master/image/projetCreateCollectionClientResponse.PNG?raw=true)
+Nous voyons donc que 6 clients ont bien été entrés dans la collection Clients. Nous pouvons par ailleurs avoir leur _id.
 
 
 
